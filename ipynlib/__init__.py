@@ -1,1 +1,1 @@
-from .ipynlib import *
+from ipynlib import *
