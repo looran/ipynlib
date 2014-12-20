@@ -1,6 +1,6 @@
 from IPython.core.display import display, HTML
 
-def show(name, countries):
+def show_js(name, countries):
     print("%d keys" % (len(countries)))
     display(HTML("""
 <div id="%s" style="width: 1000px; height: 550px;"></div>
