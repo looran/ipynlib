@@ -1,4 +1,10 @@
 ipynlib
 =======
 
-Ipython Notebook helpers
+Ipython notebook helpers
+
+### Install
+
+```bash
+sudo python setup.py install
+```
