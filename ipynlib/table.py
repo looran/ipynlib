@@ -25,7 +25,7 @@ def show_dict_of_dict(dico):
         s += "<tr>\n"
         s += "<td>%s</td>\n" % name
         for k in keys:
-            s += "<td>%s</td>\n" % str(line[k])
+            s += "<td title=\"%s\n%s\">%s</td>\n" % (name, k, str(line[k]))
         s += "</tr>\n"
     s += "</table>"
     return HTML(s)
