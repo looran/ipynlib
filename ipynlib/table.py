@@ -6,7 +6,7 @@ def show_dict(dico, sort_columns=True):
     if sort_columns:
         keys = sorted(keys)
     for k in keys:
-        s += "<th>%s</th>\n" % str(k)
+        s += "<th>%s</th>\n" % unicode(k)
     s += "</tr>\n"
     s += "<tr>\n"
     for k in keys:
@@ -28,7 +28,7 @@ def show_dict_of_dict(dico, sort_columns=True, sort_lines=True, sort_lines_key=N
     if sort_columns:
         keys = sorted(keys)
     for k in keys:
-        s += "<th>%s</th>\n" % str(k)
+        s += "<th>%s</th>\n" % unicode(k)
     s += "</tr>\n"
     items = dico.items()
     if sort_lines:
@@ -38,9 +38,9 @@ def show_dict_of_dict(dico, sort_columns=True, sort_lines=True, sort_lines_key=N
             items = sorted(items)
     for name, line in items:
         s += "<tr>\n"
-        s += "<td>%s</td>\n" % str(name)
+        s += "<td>%s</td>\n" % unicode(name)
         for k in keys:
-            s += "<td title=\"%s\n%s\">%s</td>\n" % (name, k, str(line[k]))
+            s += "<td title=\"%s\n%s\">%s</td>\n" % (name, k, unicode(line[k]))
         s += "</tr>\n"
     s += "</table>"
     return HTML(s)
